@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(mv www.salubox.com/* .)",
-      "Bash(rmdir \"www.salubox.com\")"
+      "Bash(rmdir \"www.salubox.com\")",
+      "Bash(gh auth:*)"
     ]
   }
 }
