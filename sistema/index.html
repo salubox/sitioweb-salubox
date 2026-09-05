@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema de diseño — Salubox</title>
+<meta name="description" content="Tokens, componentes y reglas de uso de la identidad Salubox 2026: marca, voz, color, tipografía, forma, espacio y accesibilidad.">
+<link rel="canonical" href="https://www.salubox.com/sistema/">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/salubox.css">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/assets/css/sistema.css">
+</head>
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <div class="encabezado__fila">
+      <a class="marca" href="/" aria-label="Salubox — inicio">
+        <img src="/assets/img/logo-salubox.svg" alt="Salubox" width="711" height="121">
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="/">Inicio</a>
+        <a href="/nosotros/">Nosotros</a>
+        <div class="menu">
+          <button type="button" class="menu__disparador" aria-expanded="false" aria-haspopup="true">
+            Productos y servicios
+            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" aria-hidden="true"><path d="M1 1.5 5.5 5.5 10 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="menu__panel">
+            <a href="/productos-y-servicios/">Vacunas</a>
+            <a href="/medicamentos/">Medicamentos</a>
+            <a href="/material-medico/">Material médico</a>
+            <a href="/planificacion-familiar/">Planificación familiar</a>
+          </div>
+        </div>
+        <a href="/socios-comerciales/">Socios comerciales</a>
+        <a href="/cobertura-nacional/">Cobertura nacional</a>
+      </nav>
+
+      <div class="encabezado__acciones">
+        <a class="btn btn--primario" href="/contacto/">Hablar con un asesor</a>
+        <button type="button" class="hamburguesa" aria-expanded="false" aria-label="Abrir menú">
+          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" aria-hidden="true"><path d="M0 1h20M0 7h20M0 13h20" stroke="currentColor" stroke-width="1.8"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav-movil" aria-label="Navegación móvil">
+      <a href="/">Inicio</a>
+      <a href="/nosotros/">Nosotros</a>
+      <a href="/productos-y-servicios/" class="sub">Vacunas</a>
+      <a href="/medicamentos/" class="sub">Medicamentos</a>
+      <a href="/material-medico/" class="sub">Material médico</a>
+      <a href="/planificacion-familiar/" class="sub">Planificación familiar</a>
+      <a href="/socios-comerciales/">Socios comerciales</a>
+      <a href="/cobertura-nacional/">Cobertura nacional</a>
+      <a class="btn btn--primario" href="/contacto/">Hablar con un asesor</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <section class="portada portada--interior">
+    <div class="contenedor">
+      <span class="rotulo rotulo--filete rotulo--claro">Sistema de diseño</span>
+      <h1>La identidad Salubox, convertida en piezas que se usan.</h1>
+      <p class="entrada">Tokens, componentes y reglas de uso. Todo lo que se ve en esta página sale del mismo archivo que usa el sitio: no es una maqueta del sistema, es el sistema.</p>
+    </div>
+  </section>
+
+  <nav class="contenedor migas" aria-label="Ruta">
+    <a href="/">Inicio</a><span>/</span>Sistema de diseño
+  </nav>
+
+  <section class="seccion">
+    <div class="contenedor sg">
+
+      <nav class="sg-indice" aria-label="Contenido del sistema">
+        <ol>
+          <li><a href="#fundamento">Fundamento</a></li>
+          <li><a href="#marca">Marca</a></li>
+          <li><a href="#voz">Voz y frases</a></li>
+          <li><a href="#color">Color</a></li>
+          <li><a href="#tipografia">Tipografía</a></li>
+          <li><a href="#forma">Forma</a></li>
+          <li><a href="#espacio">Espacio y ritmo</a></li>
+          <li><a href="#rejillas">Rejillas</a></li>
+          <li><a href="#componentes">Componentes</a></li>
+          <li><a href="#pagina">Página nueva</a></li>
+          <li><a href="#accesibilidad">Accesibilidad</a></li>
+        </ol>
+      </nav>
+
+      <div class="sg-cuerpo">
+
+        <!-- 01 ................................................. -->
+        <section id="fundamento">
+          <h2>01 · Fundamento</h2>
+          <p>El sistema no se inventó: se dedujo del logotipo. El símbolo es una caja —un marco azul que protege un cuadro verde— y de ahí salen las tres constantes que gobiernan todo lo demás.</p>
+
+          <div class="rejilla rejilla--3">
+            <article class="caja caja--marco">
+              <span class="rotulo rotulo--verde">Del símbolo</span>
+              <h3>La forma</h3>
+              <p>Las esquinas superior izquierda e inferior derecha van redondeadas; las otras dos, a escuadra. Ese radio asimétrico se repite en botones, tarjetas, fotos y viñetas.</p>
+            </article>
+            <article class="caja caja--marco">
+              <span class="rotulo rotulo--verde">De los dos cuadros</span>
+              <h3>El color</h3>
+              <p>El azul es el marco: manda, ocupa superficie, sostiene los fondos. El verde es lo que se cuida: aparece en trazos delgados y nunca compite por el mismo espacio.</p>
+            </article>
+            <article class="caja caja--marco">
+              <span class="rotulo rotulo--verde">Del concepto rector</span>
+              <h3>El tono</h3>
+              <p>«Ágiles en el servicio, cuidadosos con el producto.» La interfaz es directa y sin adornos; el trato de la tipografía y del espacio es minucioso.</p>
+            </article>
+          </div>
+
+          <div class="sg-nota">
+            <h4>Regla de oro</h4>
+            <p>Antes de agregar un color, una forma o una frase, hay que poder señalar de dónde sale en la identidad. Si no sale de ahí, no entra.</p>
+          </div>
+        </section>
+
+        <!-- 02 ................................................. -->
+        <section id="marca">
+          <h2>02 · Marca</h2>
+          <p>Un solo archivo de logotipo, en tres acabados. El símbolo suelto es el mismo dibujo, no un logotipo aparte.</p>
+
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--liso" style="display:flex;align-items:center;gap:44px;flex-wrap:wrap">
+              <img src="/assets/img/logo-salubox.svg" alt="Logotipo Salubox a color" style="height:44px;width:auto">
+              <img src="/assets/img/simbolo-salubox.svg" alt="Símbolo Salubox" style="height:44px;width:auto">
+            </div>
+            <p class="sg-muestra__pie"><code>logo-salubox.svg</code> <code>simbolo-salubox.svg</code> <span>Versión principal. Se usa siempre que el fondo lo permita.</span></p>
+          </div>
+
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--oscuro" style="display:flex;align-items:center;gap:44px;flex-wrap:wrap">
+              <img src="/assets/img/logo-salubox-blanco.svg" alt="Logotipo Salubox en blanco" style="height:44px;width:auto">
+            </div>
+            <p class="sg-muestra__pie"><code>logo-salubox-blanco.svg</code> <span>Para fondos oscuros y fotografía. Es el que va en el pie y en la franja del eslogan.</span></p>
+          </div>
+
+          <h3>Reglas de uso</h3>
+          <div class="sg-reglas">
+            <div class="sg-regla sg-regla--si">
+              <h4>Sí</h4>
+              <ul>
+                <li>La ® acompaña siempre a la palabra. No existe una versión sin ella.</li>
+                <li>Tamaño mínimo: 100 px en pantalla, 25 mm impreso.</li>
+                <li>Aire libre alrededor equivalente a la altura del símbolo.</li>
+                <li>El símbolo solo, para favicon, ícono de app y espacios donde no cabe la composición completa.</li>
+              </ul>
+            </div>
+            <div class="sg-regla sg-regla--no">
+              <h4>No</h4>
+              <ul>
+                <li>Meter el eslogan adentro del símbolo. Va a un lado del logo, nunca dentro.</li>
+                <li>Recolorear, inclinar, deformar o poner sombra al logotipo.</li>
+                <li>Usar el logo a color sobre fotografía o sobre azul: ahí va la versión en blanco.</li>
+                <li>Dibujar un símbolo distinto para pantalla y para impresión. Hay uno solo.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 03 ................................................. -->
+        <section id="voz">
+          <h2>03 · Voz y frases</h2>
+          <p>Salubox tiene cuatro frases fijas y cada una contesta una pregunta distinta. La regla que las gobierna es que <b>ninguna pieza las lleva todas</b>: cada pieza usa solo la que hace falta ahí.</p>
+
+          <div class="sg-envoltura">
+            <table class="sg-tabla">
+              <thead>
+                <tr><th>Frase</th><th>Contesta</th><th>Dónde va en el sitio</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><b>Cuidamos juntos, siempre.</b><br><span style="color:var(--tinta-suave)">Eslogan</span></td>
+                  <td>¿Qué prometen?</td>
+                  <td>Solo en la franja de cierre del home. Con su coma, siempre. Nunca en el encabezado.</td>
+                </tr>
+                <tr>
+                  <td><b>Vacunas y medicamento de especialidad</b><br><span style="color:var(--tinta-suave)">Línea descriptora</span></td>
+                  <td>¿Quiénes son?</td>
+                  <td>Pie de página, junto al logo. Como texto, nunca como imagen.</td>
+                </tr>
+                <tr>
+                  <td><b>De la prevención al tratamiento, con un solo proveedor.</b><br><span style="color:var(--tinta-suave)">Línea de alcance</span></td>
+                  <td>¿Qué me resuelven?</td>
+                  <td>Bajada del héroe del home, y desarrollada en la sección de los tres momentos.</td>
+                </tr>
+                <tr>
+                  <td><b>Cuidamos el producto como tú cuidas al paciente.</b><br><span style="color:var(--tinta-suave)">Titular del home</span></td>
+                  <td>¿Puedo confiarles esto?</td>
+                  <td>H1 del home; cierra también el manifiesto en Nosotros.</td>
+                </tr>
+                <tr>
+                  <td><b>Ágiles en el servicio, cuidadosos con el producto.</b><br><span style="color:var(--tinta-suave)">Concepto rector</span></td>
+                  <td>—</td>
+                  <td class="no">No se publica. Es la brújula con la que se escribe todo lo demás.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Cómo se escribe</h3>
+          <div class="sg-reglas">
+            <div class="sg-regla sg-regla--si">
+              <h4>Sí</h4>
+              <ul>
+                <li>Hechos comprobables: «red fría avalada por Cofepris», «tres centros de operación».</li>
+                <li>Consecuencia concreta: «una caja que llega tarde es una dosis que no se aplicó».</li>
+                <li>Segunda persona con el médico: «tu consultorio», «tu paciente».</li>
+                <li>Rótulos de sección tomados del eslogan —Cuidamos, Juntos, Siempre— cuando la sección desarrolla esa idea.</li>
+              </ul>
+            </div>
+            <div class="sg-regla sg-regla--no">
+              <h4>No</h4>
+              <ul>
+                <li>Adjetivos que puede decir cualquiera: «servicio integral», «líderes», «soluciones de calidad».</li>
+                <li>Signos de admiración y superlativos.</li>
+                <li>Hablar del paciente por encima del médico: se acompaña a quien atiende, no se le invade el terreno.</li>
+                <li>Repetir el eslogan en varias secciones de la misma página.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 ................................................. -->
+        <section id="color">
+          <h2>04 · Color</h2>
+          <p>Nueve valores y ninguno más. El azul y el verde son exactamente los del logotipo; los neutros están sesgados hacia el azul para que la página se sienta de una sola familia.</p>
+
+          <h3>Marca</h3>
+          <div class="sg-colores">
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--azul)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--azul</code></p>
+                <p class="sg-color__hex">#1789B0</p>
+                <p class="sg-color__uso">Marcos, bordes activos, franjas. Con texto blanco solo en tamaños grandes.</p>
+              </div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--azul-texto)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--azul-texto</code></p>
+                <p class="sg-color__hex">#10708F</p>
+                <p class="sg-color__uso">Azul sobre blanco: enlaces, rótulos, números. 5.5:1.</p>
+              </div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--azul-fuerte)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--azul-fuerte</code></p>
+                <p class="sg-color__hex">#0E6580</p>
+                <p class="sg-color__uso">Rellenos sólidos con texto blanco: botones, héroes interiores, franja del eslogan. 6.6:1.</p>
+              </div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--azul-tinte);box-shadow:inset 0 0 0 1px var(--gris-claro)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--azul-tinte</code></p>
+                <p class="sg-color__hex">#EAF5F9</p>
+                <p class="sg-color__uso">Fondo del bloque de llamado y del estado :hover del menú.</p>
+              </div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--verde)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--verde</code></p>
+                <p class="sg-color__hex">#5A9B4A</p>
+                <p class="sg-color__uso">Filetes, viñetas y marcos finos. Nunca en superficies grandes.</p>
+              </div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--verde-texto)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--verde-texto</code></p>
+                <p class="sg-color__hex">#3E7431</p>
+                <p class="sg-color__uso">Verde sobre blanco: rótulos de cultura y de valores. 5.6:1.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3>Neutros</h3>
+          <div class="sg-colores">
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--tinta)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--tinta</code></p>
+                <p class="sg-color__hex">#1F2933</p>
+                <p class="sg-color__uso">Texto principal y fondo del pie. 14.8:1.</p>
+              </div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--tinta-suave)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--tinta-suave</code></p>
+                <p class="sg-color__hex">#5A6570</p>
+                <p class="sg-color__uso">Texto secundario y bajadas. 5.9:1.</p>
+              </div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--gris-claro)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--gris-claro</code></p>
+                <p class="sg-color__hex">#DDE3E6</p>
+                <p class="sg-color__uso">Todos los bordes de un trazo. Nunca lleva texto encima.</p>
+              </div>
+            </div>
+            <div class="sg-color">
+              <div class="sg-color__mancha" style="background:var(--papel-tenue);box-shadow:inset 0 0 0 1px var(--gris-claro)"></div>
+              <div class="sg-color__datos">
+                <p class="sg-color__nom"><code>--papel-tenue</code></p>
+                <p class="sg-color__hex">#F5F9FA</p>
+                <p class="sg-color__uso">Fondo de sección alterna. El sitio va alternando blanco y este.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sg-nota">
+            <h4>Por qué hay dos azules «iguales»</h4>
+            <p><code>--azul</code> es el color del logotipo y se ve bien en superficie, pero con texto blanco a tamaño de botón da 4.0:1 y no llega al mínimo de accesibilidad. Por eso todo relleno sólido con texto blanco usa <code>--azul-fuerte</code>, y <code>--azul</code> se reserva para bordes, marcos y trazos.</p>
+          </div>
+        </section>
+
+        <!-- 05 ................................................. -->
+        <section id="tipografia">
+          <h2>05 · Tipografía</h2>
+          <p>Inter en cuatro pesos, la misma de la presentación de identidad. Los títulos van con tracking negativo y los rótulos con tracking positivo: ese contraste es la mitad del carácter de la página.</p>
+
+          <div class="sg-envoltura">
+            <table class="sg-tabla">
+              <thead>
+                <tr><th>Rol</th><th>Token</th><th class="num">Tamaño</th><th class="num">Peso</th><th>Tracking</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Titular de página</td><td><code>--txt-h1</code></td><td class="num">34 → 54 px</td><td class="num">700</td><td>−.022em</td></tr>
+                <tr><td>Título de sección</td><td><code>--txt-h2</code></td><td class="num">27 → 38 px</td><td class="num">700</td><td>−.022em</td></tr>
+                <tr><td>Título de tarjeta</td><td><code>--txt-h3</code></td><td class="num">19 → 22 px</td><td class="num">700</td><td>−.012em</td></tr>
+                <tr><td>Eslogan</td><td><code>--txt-eslogan</code></td><td class="num">30 → 46 px</td><td class="num">700</td><td>−.025em</td></tr>
+                <tr><td>Bajada</td><td><code>--txt-entrada</code></td><td class="num">18 → 21 px</td><td class="num">400</td><td>0</td></tr>
+                <tr><td>Texto corrido</td><td><code>--txt-base</code></td><td class="num">17 px</td><td class="num">400</td><td>0</td></tr>
+                <tr><td>Texto de tarjeta</td><td><code>--txt-chico</code></td><td class="num">15 px</td><td class="num">400</td><td>0</td></tr>
+                <tr><td>Rótulo de sección</td><td><code>--txt-rotulo</code></td><td class="num">12 px</td><td class="num">700</td><td>+.15em, versalitas</td></tr>
+                <tr><td>Nota y migas</td><td><code>--txt-nota</code></td><td class="num">13 px</td><td class="num">400</td><td>0</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--liso">
+              <span class="rotulo rotulo--filete">Rótulo de sección</span>
+              <h2 style="margin-bottom:14px">Tres momentos del cuidado, un solo proveedor.</h2>
+              <p class="entrada" style="margin-bottom:18px">Bajada de sección: contesta la pregunta que abre el título, en una o dos frases.</p>
+              <p style="margin-bottom:0">Texto corrido a 17 px, interlínea 1.65 y un máximo de 68 caracteres por línea. Ese ancho es el que sostiene la lectura: si un párrafo se pasa, no se agranda el tipo, se acorta la columna.</p>
+            </div>
+            <p class="sg-muestra__pie"><code>.rotulo.rotulo--filete</code> <code>h2</code> <code>.entrada</code> <code>p</code></p>
+          </div>
+
+          <div class="sg-nota">
+            <h4>Medida de lectura</h4>
+            <p>El token <code>--ancho-texto: 68ch</code> está aplicado a <code>p</code>, <code>ul</code> y <code>ol</code> por defecto. Los componentes que muestran texto en columnas angostas lo anulan con <code>max-width:none</code>; el texto corrido nunca lo anula.</p>
+          </div>
+        </section>
+
+        <!-- 06 ................................................. -->
+        <section id="forma">
+          <h2>06 · Forma</h2>
+          <p>El radio asimétrico es la firma del sistema. Si se quita, la página deja de verse de Salubox: es lo único que no se negocia.</p>
+
+          <code class="sg-cod">/* Tarjetas, fotos, paneles */
+border-radius: var(--r) 0 var(--r) 0;        /* 16px 0 16px 0 */
+
+/* Botones, campos, etiquetas */
+border-radius: var(--r-chico) 0 var(--r-chico) 0;   /* 10px 0 10px 0 */
+
+/* Viñetas y marcas pequeñas */
+border-radius: var(--r-viñeta) 0 var(--r-viñeta) 0; /* 4px 0 4px 0 */</code>
+
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo" style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
+              <div style="width:120px;height:96px;background:var(--papel);border:1px solid var(--gris-claro);border-radius:var(--r) 0 var(--r) 0"></div>
+              <div style="width:120px;height:44px;background:var(--azul-fuerte);border-radius:var(--r-chico) 0 var(--r-chico) 0"></div>
+              <div style="width:22px;height:22px;background:var(--verde);border-radius:var(--r-viñeta) 0 var(--r-viñeta) 0"></div>
+            </div>
+            <p class="sg-muestra__pie"><code>--r</code> <code>--r-chico</code> <code>--r-viñeta</code> <span>La esquina cuadrada superior derecha siempre apunta al mismo lado.</span></p>
+          </div>
+
+          <h3>Bordes y elevación</h3>
+          <p>Un solo borde en todo el sistema y una sola sombra. La sombra no se usa en reposo: aparece únicamente cuando una tarjeta responde al cursor.</p>
+          <code class="sg-cod">--borde:  1px solid var(--gris-claro);
+--sombra: 0 1px 2px rgba(31,41,51,.04),
+          0 12px 32px -18px rgba(31,41,51,.28);</code>
+
+          <div class="sg-reglas">
+            <div class="sg-regla sg-regla--si">
+              <h4>Sí</h4>
+              <ul>
+                <li>Distinguir con borde y con fondo; la sombra se reserva para el estado activo.</li>
+                <li>El filete verde marca de dónde arranca un bloque: esquina superior izquierda de la tarjeta, izquierda del rótulo.</li>
+              </ul>
+            </div>
+            <div class="sg-regla sg-regla--no">
+              <h4>No</h4>
+              <ul>
+                <li>Radios simétricos, ni siquiera «solo esta vez».</li>
+                <li>Poner sombra y borde grueso a todo: aplana la jerarquía y todo deja de destacar.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 07 ................................................. -->
+        <section id="espacio">
+          <h2>07 · Espacio y ritmo</h2>
+          <p>Escala de base 4. Los huecos entre elementos hermanos se resuelven con <code>gap</code> en flex o grid, no con márgenes sueltos que se colapsan.</p>
+
+          <div class="sg-espacios">
+            <div class="sg-espacio"><code>--esp-1</code><b>4 px</b><i style="width:4px"></i></div>
+            <div class="sg-espacio"><code>--esp-2</code><b>8 px</b><i style="width:8px"></i></div>
+            <div class="sg-espacio"><code>--esp-3</code><b>12 px</b><i style="width:12px"></i></div>
+            <div class="sg-espacio"><code>--esp-4</code><b>16 px</b><i style="width:16px"></i></div>
+            <div class="sg-espacio"><code>--esp-5</code><b>24 px</b><i style="width:24px"></i></div>
+            <div class="sg-espacio"><code>--esp-6</code><b>32 px</b><i style="width:32px"></i></div>
+            <div class="sg-espacio"><code>--esp-7</code><b>44 px</b><i style="width:44px"></i></div>
+            <div class="sg-espacio"><code>--esp-8</code><b>64 px</b><i style="width:64px"></i></div>
+            <div class="sg-espacio"><code>--esp-9</code><b>88 px</b><i style="width:88px"></i></div>
+          </div>
+
+          <div class="sg-envoltura">
+            <table class="sg-tabla">
+              <thead><tr><th>Token</th><th class="num">Valor</th><th>Qué gobierna</th></tr></thead>
+              <tbody>
+                <tr><td><code>--ancho</code></td><td class="num">1180 px</td><td>Ancho máximo del contenedor, con 24 px de aire a cada lado.</td></tr>
+                <tr><td><code>--ancho-texto</code></td><td class="num">68ch</td><td>Medida máxima de una línea de lectura.</td></tr>
+                <tr><td><code>--seccion</code></td><td class="num">64 → 112 px</td><td>Respiro vertical de cada sección, arriba y abajo.</td></tr>
+                <tr><td><code>--transicion</code></td><td class="num">180 ms</td><td>Toda animación de estado. Se anula con <code>prefers-reduced-motion</code>.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 08 ................................................. -->
+        <section id="rejillas">
+          <h2>08 · Rejillas</h2>
+          <p>Tres rejillas cubren el sitio entero. Bajan de columnas en dos escalones, nunca de golpe a una sola.</p>
+
+          <div class="sg-envoltura">
+            <table class="sg-tabla">
+              <thead><tr><th>Clase</th><th>Escritorio</th><th>≤ 900 px</th><th>≤ 600 px</th><th>Se usa para</th></tr></thead>
+              <tbody>
+                <tr><td><code>.rejilla--4</code></td><td>4</td><td>2</td><td>1</td><td>Beneficios y líneas de producto.</td></tr>
+                <tr><td><code>.rejilla--3</code></td><td>3</td><td>2</td><td>1</td><td>Momentos del cuidado, plazas, perfiles.</td></tr>
+                <tr><td><code>.rejilla--2</code></td><td>2</td><td>2</td><td>1</td><td>Pares de tarjetas.</td></tr>
+                <tr><td><code>.duo</code></td><td>2</td><td colspan="2">1 a partir de 860 px</td><td>Texto junto a fotografía.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="sg-nota">
+            <h4>Punto de quiebre del encabezado</h4>
+            <p>A 1040 px la navegación completa se cambia por el botón de menú. Es el ancho al que los seis rubros dejan de caber en una línea sin apretarse.</p>
+          </div>
+        </section>
+
+        <!-- 09 ................................................. -->
+        <section id="componentes">
+          <h2>09 · Componentes</h2>
+          <p>Doce piezas construyen las diez páginas del sitio. Cada una tiene un trabajo; si hace falta algo nuevo, primero hay que descartar que alguna de estas ya lo haga.</p>
+
+          <h3>Botones</h3>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--liso" style="display:flex;gap:14px;flex-wrap:wrap">
+              <a class="btn btn--primario" href="#componentes">Hablar con un asesor
+                <svg class="flecha" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn--secundario" href="#componentes">Ver cómo funciona</a>
+            </div>
+            <p class="sg-muestra__pie"><code>.btn--primario</code> <code>.btn--secundario</code> <span>Un solo botón primario por pantalla. La flecha se reserva para la acción principal.</span></p>
+          </div>
+
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--oscuro" style="display:flex;gap:14px;flex-wrap:wrap">
+              <a class="btn btn--claro" href="#componentes">Descargar catálogo</a>
+              <a class="btn btn--fantasma-claro" href="#componentes">Hablar con un asesor</a>
+            </div>
+            <p class="sg-muestra__pie"><code>.btn--claro</code> <code>.btn--fantasma-claro</code> <span>Las dos variantes para héroes interiores y fondos azules.</span></p>
+          </div>
+
+          <h3>Rótulo de sección</h3>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--liso" style="display:flex;gap:36px;flex-wrap:wrap">
+              <span class="rotulo rotulo--filete">Cuidamos</span>
+              <span class="rotulo rotulo--verde">01 · Prevenir</span>
+              <span class="rotulo">Con quién trabajamos</span>
+            </div>
+            <p class="sg-muestra__pie"><code>.rotulo--filete</code> <code>.rotulo--verde</code> <code>.rotulo</code> <span>Con filete cuando abre una sección; en verde dentro de una tarjeta.</span></p>
+          </div>
+
+          <h3>Caja</h3>
+          <p>La tarjeta base. Con <code>.caja--marco</code> lleva el filete verde de arranque; envuelta en <code>&lt;a&gt;</code> se vuelve navegable y responde al cursor.</p>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo">
+              <div class="rejilla rejilla--2" style="max-width:640px">
+                <article class="caja caja--marco">
+                  <span class="rotulo rotulo--verde">01 · Prevenir</span>
+                  <h3>Vacunas y biológicos</h3>
+                  <p>Esquemas completos para consultorio, hospital y programas de vacunación.</p>
+                </article>
+                <a class="caja" href="#componentes">
+                  <h3>Medicamentos</h3>
+                  <p>Biológicos y medicamento de especialidad para que tu paciente encuentre su tratamiento contigo.</p>
+                  <span class="enlace-flecha">Saber más
+                    <svg class="flecha" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <p class="sg-muestra__pie"><code>.caja.caja--marco</code> <code>a.caja</code> <code>.enlace-flecha</code></p>
+          </div>
+
+          <h3>Perfil</h3>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo">
+              <div class="rejilla rejilla--3" style="max-width:640px">
+                <div class="perfil"><img src="/wp-content/uploads/2023/03/icono-de-medico.svg" alt="" aria-hidden="true"><span>Médicos y consultorios</span></div>
+                <div class="perfil"><img src="/wp-content/uploads/2023/03/icono-de-hospital.svg" alt="" aria-hidden="true"><span>Hospitales y clínicas</span></div>
+                <div class="perfil"><img src="/wp-content/uploads/2023/03/icono-de-gobierno.svg" alt="" aria-hidden="true"><span>Gobierno</span></div>
+              </div>
+            </div>
+            <p class="sg-muestra__pie"><code>.perfil</code> <span>Ícono más etiqueta. El ícono va con <code>alt=""</code> porque la etiqueta ya lo nombra.</span></p>
+          </div>
+
+          <h3>Listas</h3>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--liso" style="display:grid;gap:28px">
+              <ul class="lista-marcada">
+                <li>Apósitos</li>
+                <li>Cintas quirúrgicas</li>
+                <li>Productos para cierre de heridas</li>
+              </ul>
+              <ul class="etiquetas">
+                <li>T380A</li>
+                <li>TCARE</li>
+                <li>EASY CARE</li>
+                <li>KIT AMEU</li>
+              </ul>
+            </div>
+            <p class="sg-muestra__pie"><code>.lista-marcada</code> <code>.etiquetas</code> <span>La primera para enumerar; la segunda para nombres de producto o clave.</span></p>
+          </div>
+
+          <h3>Valores ESCHIP</h3>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--liso">
+              <div class="eschip">
+                <div class="eschip__fila">
+                  <span class="eschip__letra">E</span>
+                  <span class="eschip__valor">Empatía</span>
+                  <p class="eschip__frase"><b>E</b>ntendemos lo que el otro siente.</p>
+                </div>
+                <div class="eschip__fila">
+                  <span class="eschip__letra">S</span>
+                  <span class="eschip__valor">Servicio</span>
+                  <p class="eschip__frase"><b>S</b>olucionamos ágilmente.</p>
+                </div>
+              </div>
+            </div>
+            <p class="sg-muestra__pie"><code>.eschip</code> <code>.eschip__fila</code> <span>Las seis filas van siempre completas y en el orden del acrónimo.</span></p>
+          </div>
+
+          <h3>Línea del tiempo</h3>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo sg-muestra__lienzo--liso">
+              <div class="historia">
+                <div class="hito"><span class="hito__anio">2007</span><p>Nace SALUBOX: todos los servicios de salud dentro de una caja.</p></div>
+                <div class="hito" style="padding-bottom:0"><span class="hito__anio">2026</span><p>Nueva identidad de marca.</p></div>
+              </div>
+            </div>
+            <p class="sg-muestra__pie"><code>.historia</code> <code>.hito</code> <span>Solo para secuencias reales con fecha. No para pasos de un proceso.</span></p>
+          </div>
+
+          <h3>Bloque de llamado</h3>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo">
+              <div class="llamado">
+                <div>
+                  <h2>¿Buscas un medicamento de especialidad?</h2>
+                  <p>Dinos la clave y tu especialidad. Te contestamos con disponibilidad real.</p>
+                </div>
+                <div class="botonera">
+                  <a class="btn btn--primario" href="#componentes">Enviar mensaje</a>
+                </div>
+              </div>
+            </div>
+            <p class="sg-muestra__pie"><code>.llamado</code> <span>Cierra cada página interior. Uno por página, nunca dos.</span></p>
+          </div>
+
+          <h3>Franja del eslogan</h3>
+          <div class="sg-muestra">
+            <div class="sg-muestra__lienzo" style="padding:0">
+              <div class="eslogan-franja" style="padding:56px 24px">
+                <img src="/assets/img/logo-salubox-blanco.svg" alt="Salubox" style="height:32px;width:auto;margin:0 auto 24px">
+                <p class="eslogan">Cuidamos juntos<span class="coma">,</span> siempre.</p>
+              </div>
+            </div>
+            <p class="sg-muestra__pie"><code>.eslogan-franja</code> <code>.eslogan</code> <span>Exclusiva del home, al cierre. La coma se marca aparte y nunca se omite.</span></p>
+          </div>
+        </section>
+
+        <!-- 10 ................................................. -->
+        <section id="pagina">
+          <h2>10 · Página nueva</h2>
+          <p>Toda página interior sigue el mismo esqueleto. Copiar cualquiera de las nueve existentes y cambiar el contenido es más seguro que empezar de cero.</p>
+
+          <code class="sg-cod">&lt;section class="portada portada--interior" style="--fondo:url('…')"&gt;
+  &lt;div class="contenedor"&gt;
+    &lt;span class="rotulo rotulo--filete rotulo--claro"&gt;Rubro&lt;/span&gt;
+    &lt;h1&gt;Titular de la página.&lt;/h1&gt;
+    &lt;p class="entrada"&gt;Qué resuelve, en una o dos frases.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;nav class="contenedor migas"&gt;…&lt;/nav&gt;
+
+&lt;section class="seccion"&gt;          &lt;!-- fondo blanco   --&gt;
+&lt;section class="seccion seccion--tenue"&gt; &lt;!-- fondo alterno --&gt;
+
+&lt;section class="seccion"&gt;
+  &lt;div class="contenedor"&gt;&lt;div class="llamado"&gt;…&lt;/div&gt;&lt;/div&gt;
+&lt;/section&gt;</code>
+
+          <div class="sg-envoltura">
+            <table class="sg-tabla">
+              <thead><tr><th>Regla</th><th>Por qué</th></tr></thead>
+              <tbody>
+                <tr><td>El encabezado lleva logo solo, sin eslogan.</td><td>El eslogan no compite con la navegación; cierra, no abre.</td></tr>
+                <tr><td>Las secciones alternan blanco y <code>--tenue</code>.</td><td>Marca el ritmo sin necesidad de líneas divisorias.</td></tr>
+                <tr><td>Un solo <code>h1</code> por página, en el héroe.</td><td>Estructura de encabezados y SEO.</td></tr>
+                <tr><td>El bloque de llamado cierra la página.</td><td>Toda página interior termina con una salida clara a Contacto.</td></tr>
+                <tr><td>Rutas absolutas: <code>/assets/…</code>, <code>/nosotros/</code>.</td><td>El sitio se sirve desde la raíz del dominio.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 11 ................................................. -->
+        <section id="accesibilidad">
+          <h2>11 · Accesibilidad</h2>
+          <p>No es una capa aparte: son cinco condiciones que ya vienen resueltas en los componentes y que hay que respetar al agregar cosas.</p>
+
+          <div class="sg-envoltura">
+            <table class="sg-tabla">
+              <thead><tr><th>Condición</th><th>Cómo está resuelta</th></tr></thead>
+              <tbody>
+                <tr><td>Contraste de texto</td><td>Todos los pares de color del sistema pasan AA. Texto blanco solo sobre <code>--azul-fuerte</code> o <code>--tinta</code>.</td></tr>
+                <tr><td>Foco visible</td><td><code>:focus-visible</code> global: contorno azul de 3 px separado 3 px del elemento.</td></tr>
+                <tr><td>Salto al contenido</td><td>Primer enlace de cada página, oculto hasta recibir el foco.</td></tr>
+                <tr><td>Íconos decorativos</td><td><code>alt=""</code> y <code>aria-hidden="true"</code> cuando la etiqueta de al lado ya los nombra.</td></tr>
+                <tr><td>Movimiento</td><td><code>prefers-reduced-motion</code> desactiva transiciones y desplazamiento suave.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="sg-nota">
+            <h4>Dónde vive esto</h4>
+            <p>Los tokens y los componentes están en <code>assets/css/salubox.css</code>, comentados con los mismos números de sección de esta página. El andamio de esta referencia está aparte, en <code>assets/css/sistema.css</code>, y no lo carga ninguna otra página.</p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie__rejilla">
+      <div class="pie__marca">
+        <img src="/assets/img/logo-salubox-blanco.svg" alt="Salubox" width="711" height="121">
+        <p class="pie__descriptora">Vacunas y medicamento de especialidad</p>
+      </div>
+
+      <div>
+        <h4>Compañía</h4>
+        <ul>
+          <li><a href="/nosotros/">Nosotros</a></li>
+          <li><a href="/socios-comerciales/">Socios comerciales</a></li>
+          <li><a href="/cobertura-nacional/">Cobertura nacional</a></li>
+          <li><a href="/contacto/">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Productos y servicios</h4>
+        <ul>
+          <li><a href="/productos-y-servicios/">Vacunas</a></li>
+          <li><a href="/medicamentos/">Medicamentos</a></li>
+          <li><a href="/material-medico/">Material médico</a></li>
+          <li><a href="/planificacion-familiar/">Planificación familiar</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Estamos aquí</h4>
+        <ul>
+          <li>Guadalajara · <a href="tel:+523338134360">33 3813 4360</a></li>
+          <li>Monterrey · <a href="tel:+528183337090">81 8333 7090</a></li>
+          <li>Ciudad de México · <a href="tel:+525556581612">55 5658 1612</a></li>
+          <li>WhatsApp · <a href="https://wa.me/523312501464">33 1250 1464</a></li>
+          <li><a href="mailto:contacto@salubox.com">contacto@salubox.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie__legal">
+      <p style="margin:0">© <span data-anio>2026</span> Salubox SAPI de CV · <a href="/aviso-de-privacidad/">Aviso de privacidad</a></p>
+      <div class="pie__social">
+        <a href="https://www.facebook.com/saluboxmx" aria-label="Salubox en Facebook">
+          <img src="/wp-content/uploads/2023/03/icono-de-facebook.svg" alt="" aria-hidden="true">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/salubox.js" defer></script>
+</body>
+</html>

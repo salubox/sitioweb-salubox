@@ -4,6 +4,11 @@ Propuesta de rediseño construida sobre la nueva identidad («Presentación de l
 identidad — Salubox», 4 de septiembre de 2026). Misma estructura de páginas y mismo
 contenido de negocio que el sitio actual; cambia la imagen y cambian los mensajes.
 
+> **Referencia navegable: [`/sistema/`](sistema/index.html)**
+> Este archivo es el resumen. La referencia completa —tokens, componentes vivos,
+> reglas de marca y de voz, accesibilidad— vive en la página `/sistema/`, construida
+> con el mismo CSS que el sitio. No está en el menú y va con `noindex`.
+
 ---
 
 ## 1. De dónde sale cada decisión
@@ -33,9 +38,9 @@ Su lugar lo ocupan el Manifiesto y los valores ESCHIP.
 
 | Token | Valor | Uso |
 |---|---|---|
-| `--azul` | `#1789B0` | Color principal: botones, marcos, acentos |
-| `--azul-texto` | `#10708F` | Azul sobre blanco (contraste AA) |
-| `--azul-fuerte` | `#0E6580` | Fondos de héroe interior y franja del eslogan |
+| `--azul` | `#1789B0` | Color del logotipo: marcos, bordes, trazos |
+| `--azul-texto` | `#10708F` | Azul sobre blanco, 5.5:1 |
+| `--azul-fuerte` | `#0E6580` | Todo relleno sólido con texto blanco: botones, héroes interiores, franja del eslogan. 6.6:1 |
 | `--azul-tinte` | `#EAF5F9` | Fondos suaves y bloques de llamado |
 | `--verde` | `#5A9B4A` | Acento del segundo plano: filetes, viñetas, marcos |
 | `--verde-texto` | `#3E7431` | Verde sobre blanco (contraste AA) |
@@ -83,11 +88,13 @@ Punto de quiebre de la navegación: 1040 px. Rejillas: 4→2→1 y 3→2→1.
 ## 6. Archivos
 
 ```
-assets/css/salubox.css      Todo el sistema visual, comentado por bloques
+assets/css/salubox.css      Tokens y componentes. Única fuente de verdad
+assets/css/sistema.css      Andamio de /sistema/ (no lo carga ninguna otra página)
 assets/js/salubox.js        Menú móvil y submenú de productos (sin dependencias)
 assets/img/                 Logo a color, logo en blanco, símbolo y favicon (SVG)
 index.html                  Home
 <sección>/index.html        Las nueve páginas interiores
+sistema/index.html          Referencia del sistema de diseño
 wp-content/uploads/         Fotos, íconos y logos heredados del sitio actual
 ```
 
