@@ -1,0 +1,147 @@
+/* ============================================================
+   Estilos exclusivos de la referencia del sistema (/sistema/).
+   No se cargan en ninguna otra página: aquí vive el andamio que
+   presenta los componentes, no los componentes.
+   ============================================================ */
+
+.sg{
+  display:grid;
+  grid-template-columns:236px minmax(0,1fr);
+  gap:clamp(32px,5vw,64px);
+  align-items:start;
+}
+@media (max-width:900px){
+  .sg{grid-template-columns:1fr}
+  .sg-indice{position:static;border-right:0;border-bottom:var(--borde);padding-bottom:var(--esp-5)}
+}
+
+/* --- Índice lateral --- */
+.sg-indice{
+  position:sticky;top:96px;
+  font-size:var(--txt-chico);
+  border-right:var(--borde);
+  padding-right:var(--esp-5);
+}
+.sg-indice ol{list-style:none;margin:0;padding:0;display:grid;gap:2px;counter-reset:s}
+.sg-indice a{
+  display:flex;gap:10px;
+  padding:7px 10px;color:var(--tinta-suave);
+  border-radius:var(--r-viñeta) 0 var(--r-viñeta) 0;
+}
+.sg-indice a:hover{background:var(--azul-tinte);color:var(--azul-fuerte);text-decoration:none}
+.sg-indice a::before{
+  counter-increment:s;content:counter(s,decimal-leading-zero);
+  color:var(--tinta-suave);font-variant-numeric:tabular-nums;font-weight:700;font-size:var(--txt-nota);
+}
+
+/* --- Cuerpo --- */
+.sg-cuerpo > section{
+  padding-bottom:var(--esp-9);
+  scroll-margin-top:96px;
+}
+.sg-cuerpo > section:last-child{padding-bottom:var(--esp-6)}
+/* Solo los títulos del andamio, nunca los de las muestras que van adentro. */
+.sg-cuerpo > section > h2{
+  padding-bottom:var(--esp-4);
+  border-bottom:2px solid var(--tinta);
+  margin-bottom:var(--esp-5);
+}
+.sg-cuerpo > section > h3{margin:var(--esp-7) 0 var(--esp-3)}
+.sg-cuerpo > section > h3:first-of-type{margin-top:var(--esp-5)}
+
+/* --- Muestra: marco a cuadros + pie con el nombre de la clase --- */
+.sg-muestra{
+  border:var(--borde);
+  border-radius:var(--r) 0 var(--r) 0;
+  overflow:hidden;
+  margin:0 0 var(--esp-5);
+}
+.sg-muestra__lienzo{
+  padding:var(--esp-6) var(--esp-5);
+  background:
+    repeating-linear-gradient(45deg,#FBFCFD,#FBFCFD 10px,#F3F7F9 10px,#F3F7F9 20px);
+  overflow-x:auto;
+}
+.sg-muestra__lienzo--liso{background:var(--papel)}
+.sg-muestra__lienzo--oscuro{background:var(--azul-fuerte)}
+.sg-muestra__pie{
+  display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;
+  border-top:var(--borde);
+  padding:10px var(--esp-4);
+  background:var(--papel-tenue);
+  font-size:var(--txt-nota);
+}
+.sg-muestra__pie code{color:var(--azul-texto)}
+.sg-muestra__pie span{color:var(--tinta-suave)}
+
+code,.sg-cod{
+  font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace;
+  font-size:.88em;
+}
+.sg-cod{
+  display:block;white-space:pre;overflow-x:auto;
+  background:var(--tinta);color:#DCE6EA;
+  padding:var(--esp-4) var(--esp-5);
+  border-radius:var(--r-chico) 0 var(--r-chico) 0;
+  margin:0 0 var(--esp-5);
+  line-height:1.7;font-size:13px;
+}
+
+/* --- Tabla de especificación --- */
+.sg-tabla{width:100%;border-collapse:collapse;margin:0 0 var(--esp-5);font-size:var(--txt-chico)}
+.sg-tabla th{
+  text-align:left;font-size:var(--txt-micro);font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--tinta-suave);
+  border-bottom:2px solid var(--tinta);padding:0 var(--esp-4) 9px 0;vertical-align:bottom;
+}
+.sg-tabla td{border-bottom:var(--borde);padding:11px var(--esp-4) 11px 0;vertical-align:top}
+.sg-tabla td:last-child,.sg-tabla th:last-child{padding-right:0}
+.sg-tabla code{color:var(--azul-texto);white-space:nowrap}
+.sg-tabla .num{font-variant-numeric:tabular-nums}
+.sg-envoltura{overflow-x:auto}
+
+/* --- Muestras de color --- */
+.sg-colores{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:var(--esp-4);margin-bottom:var(--esp-5)}
+.sg-color{border:var(--borde);border-radius:var(--r-chico) 0 var(--r-chico) 0;overflow:hidden}
+.sg-color__mancha{height:76px}
+.sg-color__datos{padding:12px var(--esp-4) 14px}
+.sg-color__nom{font-weight:700;font-size:var(--txt-chico);margin:0}
+.sg-color__hex{margin:1px 0 0;font-size:var(--txt-nota);color:var(--tinta-suave);font-variant-numeric:tabular-nums}
+.sg-color__uso{margin:7px 0 0;font-size:var(--txt-nota);color:var(--tinta-suave);max-width:none}
+
+/* --- Escala de espacio --- */
+.sg-espacios{display:grid;gap:7px;margin-bottom:var(--esp-5)}
+.sg-espacio{display:grid;grid-template-columns:88px 62px 1fr;gap:var(--esp-4);align-items:center;font-size:var(--txt-nota)}
+.sg-espacio code{color:var(--azul-texto)}
+.sg-espacio b{font-variant-numeric:tabular-nums;color:var(--tinta-suave);font-weight:500}
+.sg-espacio i{display:block;height:14px;background:var(--azul);border-radius:0 0 var(--r-viñeta) 0}
+
+/* --- Sí / No --- */
+.sg-reglas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--esp-4);margin-bottom:var(--esp-5)}
+@media (max-width:700px){.sg-reglas{grid-template-columns:1fr}}
+.sg-regla{border:var(--borde);border-radius:var(--r-chico) 0 var(--r-chico) 0;padding:var(--esp-4) var(--esp-5) var(--esp-5)}
+.sg-regla--si{border-top:4px solid var(--verde)}
+.sg-regla--no{border-top:4px solid #C05B4D}
+.sg-regla h4{
+  font-size:var(--txt-micro);letter-spacing:.14em;text-transform:uppercase;
+  margin:var(--esp-3) 0 var(--esp-3);
+}
+.sg-regla--si h4{color:var(--verde-texto)}
+.sg-regla--no h4{color:#A8483B}
+.sg-regla ul{margin:0;padding-left:19px}
+.sg-regla li{margin-bottom:8px;font-size:var(--txt-chico);color:var(--tinta-suave)}
+.sg-regla li:last-child{margin-bottom:0}
+
+/* --- Nota al margen --- */
+.sg-nota{
+  background:var(--papel-tenue);
+  border:var(--borde);
+  border-left:5px solid var(--verde);
+  padding:var(--esp-5) var(--esp-6);
+  margin:0 0 var(--esp-5);
+}
+.sg-nota p:last-child{margin-bottom:0}
+.sg-nota h4{margin-top:0}
+
+/* Los componentes que se muestran sueltos no arrastran el ancho de lectura */
+.sg-muestra p{max-width:none}
